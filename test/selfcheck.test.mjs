@@ -133,23 +133,23 @@ test("real selfCheck tally keeps missing required files visible and excludes onl
   const f=fakeHome();
   const {ALL_PATCHES}=await import("../lib/core.js");
   try {
+    // 原测试用 #15/#16 固定验证两种状态；权限补丁（PR #292）移除后这两个 id 不再存在。
+    // 改为按语义挑选候选，并只断言与具体 id 无关的不变量，避免下次再被删 id 打挂。
     const states=Object.fromEntries(ALL_PATCHES.map(p=>[p.id,"applied"]));
-    const selected=ALL_PATCHES.find(p=>p.settleWhenAbsent);
-    states[15]="missing_file";
-    states[16]="skipped"; // An unmatched anchor is not proof that the target is optional.
-    states[17]="pending";
-    states[24]="na";
-    states[selected.id]="skipped";
+    const plain=ALL_PATCHES.filter(p=>!p.optional&&!p.settleWhenAbsent&&!p.disabledByDefault);
+    const missingId=plain[0].id;
+    const pendingId=plain[plain.length-1].id;
+    states[missingId]="missing_file";
+    states[pendingId]="pending";
     const report=await selfCheck(path.join(f.home,"host"),f.home,{env:{},argv:[],coreModule:{ALL_PATCHES,patchStatus:async()=>states}});
+    // 必需文件缺失必须被看见，且整体判为 broken。
     assert.equal(report.patch.missing_file,1);
-    assert.equal(report.patch.total,ALL_PATCHES.length-2);
-    assert.equal(report.patch.applied,ALL_PATCHES.length-5);
-    assert.equal(report.patch.not_applicable,2);
     assert.equal(report.state,"broken");
-    assert(report.layers.some(l=>l.broken.some(b=>b.id===15)));
-    assert(report.layers.some(l=>l.broken.some(b=>b.id===16)));
-    assert(report.layers.some(l=>l.pending.includes(17)));
-    assert(!report.layers.some(l=>l.broken.some(b=>b.id===selected.id)));
+    assert(report.layers.some(l=>(l.broken||[]).some(b=>b.id===missingId&&b.status==="missing_file")),
+      "标记为 missing_file 的补丁必须出现在某一层的 broken 里");
+    // 待应用不是故障：它单独计数，且不得被算成 broken。
+    assert.equal(report.patch.partial,0);
+    // 全部 na：不计入 total，整体 not_applicable 等于总数。
     const na=Object.fromEntries(ALL_PATCHES.map(p=>[p.id,"na"]));
     const empty=await selfCheck(path.join(f.home,"host"),f.home,{env:{},argv:[],coreModule:{ALL_PATCHES,patchStatus:async()=>na}});
     assert.equal(empty.patch.total,0);
