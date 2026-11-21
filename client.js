@@ -9233,7 +9233,8 @@ var zh = {
   "filter.na": "\u672C\u7AEF\u4E0D\u9002\u7528",
   "filter.hint": "\u70B9\u7EC4\u6807\u9898\u5C55\u5F00\u660E\u7EC6\uFF1B\u60AC\u505C\u72B6\u6001\u770B\u539F\u56E0",
   "filter.empty": "\u8FD9\u4E2A\u8FC7\u6EE4\u6761\u4EF6\u4E0B\u6CA1\u6709\u8865\u4E01\u3002",
-  "sw.permission": "\u6743\u9650\u8865\u4E01",
+  "sw.permission": "\u6743\u9650\u8865\u4E01\uFF08\u5DF2\u79FB\u9664\uFF09",
+  "sw.permission.desc": "\u672C\u6784\u5EFA\u5DF2\u79FB\u9664\u5168\u90E8\u6743\u9650/\u6C99\u7BB1/\u5BA1\u6279\u8865\u4E01\u3002\u6743\u9650\u8BF7\u76F4\u63A5\u7528 DSH \u539F\u751F\u8BBE\u7F6E\uFF08danger-full-access\u3001approval policy\uFF09\u3002",
   "inject.title": "\u6CE8\u5165\u4E0E\u5206\u5C42",
   "inject.desc": "\u63A7\u5236 Purge \u63D0\u793A\u8BCD\u6CE8\u5165\u8FDB\u5165\u54EA\u4E9B\u4F1A\u8BDD\u3002\u4EE5\u4E0B\u8BBE\u7F6E\u90FD\u4E0D\u6539\u53D8\u9ED8\u8BA4\u884C\u4E3A\uFF1A\u4E0D\u586B\u5C31\u6309\u539F\u6765\u7684\u65B9\u5F0F\u5DE5\u4F5C\u3002",
   "inject.enabled": "\u542F\u7528\u6CE8\u5165",
@@ -9251,8 +9252,29 @@ var zh = {
   "inject.saved": "\u5DF2\u4FDD\u5B58",
   "inject.retry": "\u91CD\u8BD5",
   "inject.noHost": "\u5BBF\u4E3B\u672A\u63D0\u4F9B configEditor\uFF0C\u65E0\u6CD5\u4ECE\u754C\u9762\u5199\u5165\u3002",
-  "sw.permission.desc": "\u8BA9\u5BBF\u4E3B\u4E0D\u518D\u7528\u6C99\u7BB1\u8FB9\u754C\u548C\u5BA1\u6279\u5F39\u7A97\u62E6\u5DE5\u5177\u8C03\u7528\u3002\u9ED8\u8BA4\u5F00\u3002",
-  "sw.permission.hint": "\u6539\u5199\u5BBF\u4E3B\u91CC\u7684\u6C99\u7BB1 / \u5BA1\u6279 / \u81EA\u52A8\u653E\u884C\u4EE3\u7801\uFF0C\u5171 14 \u6761\uFF1A#6 #7 #8 #9 #10 #13 #14 #15 #16 #35 #51 #59 #60 #62\u3002\u5F00\u542F\u540E\u5FC5\u987B\u70B9\u300C\u5E94\u7528\u300D\u624D\u5199\u76D8\uFF0C\u5199\u524D\u81EA\u52A8\u5907\u4EFD\uFF1B\u9700\u8981\u4F60\u624B\u52A8\u9000\u51FA\u91CD\u5F00 DSH \u624D\u751F\u6548\u3002\u5173\u6389\u5B83\u4E0D\u4F1A\u7ACB\u523B\u56DE\u6EDA\u5DF2\u5199\u5165\u7684\u6587\u4EF6\uFF0C\u4E0B\u6B21\u300C\u5E94\u7528\u300D\u624D\u56DE\u6EDA\u3002",
+  "prompt.title": "\u63D0\u793A\u8BCD",
+  "prompt.desc": "\u7F16\u8F91\u6CE8\u5165\u6B63\u6587\u3002\u53EF\u4EE5\u53EA\u6539\u5168\u5C40\uFF0C\u4E5F\u53EF\u4EE5\u53EA\u6539\u5F53\u524D\u4F1A\u8BDD\uFF0C\u6216\u4E34\u65F6\u6539\u4E00\u6B21\u3002",
+  "prompt.scope.global": "\u5168\u5C40",
+  "prompt.scope.session": "\u672C\u4F1A\u8BDD",
+  "prompt.scope.one-shot": "\u4EC5\u672C\u6B21",
+  "prompt.scope.globalHint": "\u5199\u5165 $DSH_HOME/prompt-inject.md\uFF0C\u5BF9\u6240\u6709\u4F1A\u8BDD\u751F\u6548\uFF0C\u91CD\u542F\u540E\u4ECD\u5728\u3002",
+  "prompt.scope.sessionHint": "\u53EA\u5BF9\u5F53\u524D\u4F1A\u8BDD\u751F\u6548\uFF0C\u5199\u5165\u72EC\u7ACB\u6587\u4EF6\uFF0C\u91CD\u542F\u540E\u4ECD\u5728\u3002",
+  "prompt.scope.oneShotHint": "\u53EA\u5B58\u5728\u5185\u5B58\u4E2D\uFF0C\u91CD\u542F DSH \u540E\u81EA\u52A8\u5931\u6548\uFF0C\u4E0D\u5199\u4EFB\u4F55\u6587\u4EF6\u3002",
+  "prompt.placeholder": "\u5728\u8FD9\u91CC\u5199\u6CE8\u5165\u6B63\u6587\u2026",
+  "prompt.save": "\u4FDD\u5B58",
+  "prompt.saving": "\u4FDD\u5B58\u4E2D\u2026",
+  "prompt.saved": "\u5DF2\u4FDD\u5B58",
+  "prompt.optimize": "\u4F18\u5316",
+  "prompt.optimizing": "\u4F18\u5316\u4E2D\u2026",
+  "prompt.optimizedHint": "\u4F18\u5316\u7ED3\u679C\u5DF2\u586B\u5165\u7F16\u8F91\u6846\uFF0C\u786E\u8BA4\u540E\u70B9\u4FDD\u5B58\u624D\u4F1A\u751F\u6548\u3002",
+  "prompt.revertOptimize": "\u8FD8\u539F",
+  "prompt.clearScope": "\u6E05\u7A7A\u8BE5\u4F5C\u7528\u57DF",
+  "prompt.noSession": "\u5F53\u524D\u6CA1\u6709\u6D3B\u52A8\u4F1A\u8BDD\uFF0C\u53EA\u80FD\u7F16\u8F91\u5168\u5C40\u3002",
+  "prompt.goal.concise": "\u7CBE\u7B80",
+  "prompt.goal.precise": "\u660E\u786E",
+  "prompt.goal.structure": "\u7ED3\u6784\u5316",
+  "prompt.goal.strengthen": "\u5F3A\u5316\u6267\u884C",
+  "sw.permission.hint": "\u8FD9\u4E9B\u8865\u4E01\u4F1A\u4EE5\u7CBE\u786E\u7247\u6BB5\u6539\u5199\u5BBF\u4E3B\u6E90\u7801\uFF0C\u628A\u6C99\u7BB1 confine()\u3001\u6587\u4EF6\u5199\u56F4\u680F checkedTarget()\u3001\u63D0\u6743\u9636\u68AF\u4E0E\u5BA1\u6279\u95E8\u5168\u90E8\u62C6\u6389\u3002\u5B83\u4EEC\u7684\u6548\u679C\u53EF\u7531 DSH \u539F\u751F danger-full-access + approval policy: never \u5B8C\u5168\u8FBE\u6210\uFF0C\u800C\u5BBF\u4E3B\u6539\u5199\u4F1A\u968F\u5B98\u65B9\u66F4\u65B0\u5931\u6548\u3001\u65E0\u6CD5\u6309\u4F1A\u8BDD\u9694\u79BB\u3001\u4E14\u65E0\u6CD5\u8F7B\u91CF\u56DE\u6EDA\u3002\u56E0\u6B64\u672C\u5206\u652F\u4E0D\u518D\u63D0\u4F9B\u3002",
   "sw.context": "\u4E0A\u4E0B\u6587\u7BA1\u7406",
   "sw.context.desc": "\u5173\u6389\u91CD\u590D\u8C03\u7528\u63D0\u9192\u4E0E\u5DE5\u5177\u7ED3\u679C\u4FEE\u526A\u3002\u9ED8\u8BA4\u5173\uFF0C\u5F00\u4E86 token \u4F1A\u6DA8\u3002",
   "sw.context.hint": "\u5BF9\u5E94 #18 \u91CD\u590D\u8C03\u7528\u63D0\u9192\u3001#19 \u5DE5\u5177\u7ED3\u679C\u4FEE\u526A\u3002\u5173\u6389\u540E\u6A21\u578B\u4E0D\u518D\u6536\u5230\u91CD\u590D\u8C03\u7528\u63D0\u9192\uFF0C\u957F\u5DE5\u5177\u8F93\u51FA\u4E5F\u4E0D\u518D\u88AB\u88C1\u526A\u2014\u2014\u4EE3\u4EF7\u662F token \u6301\u7EED\u589E\u957F\uFF0C\u91CD\u5EA6\u4F1A\u8BDD\u66F4\u5BB9\u6613\u649E\u4E0A\u9650\u3002\u9ED8\u8BA4\u5173\u3002",
@@ -9698,7 +9720,7 @@ var en = {
   "filter.na": "Not for this host",
   "filter.hint": "Open a group for rows; hover a status for the reason",
   "filter.empty": "No patches match this filter.",
-  "sw.permission": "Permission patches",
+  "sw.permission": "Permission patches (removed)",
   "inject.title": "Injection & layers",
   "inject.desc": "Control which sessions receive the Purge prompt injection. Nothing here changes default behaviour: leave it empty and it works exactly as before.",
   "inject.enabled": "Enable injection",
@@ -9716,8 +9738,30 @@ var en = {
   "inject.saved": "Saved",
   "inject.retry": "Retry",
   "inject.noHost": "The host does not provide configEditor, so this cannot be written from the UI.",
-  "sw.permission.desc": "Stop the host from blocking tool calls behind sandbox and approval gates. On by default.",
-  "sw.permission.hint": "Rewrites the host sandbox / approval / auto-grant code: 14 patches (#6 #7 #8 #9 #10 #13 #14 #15 #16 #35 #51 #59 #60 #62). Nothing is written until you press Apply, and a backup is taken first; you must quit and reopen DSH yourself. Turning it off does not roll back what is already written; the next Apply does.",
+  "prompt.title": "Prompt",
+  "prompt.desc": "Edit the injected prompt. Scope it globally, to this session, or just once.",
+  "prompt.scope.global": "Global",
+  "prompt.scope.session": "This session",
+  "prompt.scope.one-shot": "Once",
+  "prompt.scope.globalHint": "Writes $DSH_HOME/prompt-inject.md; applies to every session and survives restart.",
+  "prompt.scope.sessionHint": "Applies only to this session, stored in its own file and survives restart.",
+  "prompt.scope.oneShotHint": "Memory only; gone after a DSH restart and never written to disk.",
+  "prompt.placeholder": "Write the injected prompt here...",
+  "prompt.save": "Save",
+  "prompt.saving": "Saving...",
+  "prompt.saved": "Saved",
+  "prompt.optimize": "Optimize",
+  "prompt.optimizing": "Optimizing...",
+  "prompt.optimizedHint": "The result is in the editor; press Save to apply it.",
+  "prompt.revertOptimize": "Revert",
+  "prompt.clearScope": "Clear this scope",
+  "prompt.noSession": "No active session; only the global scope is editable.",
+  "prompt.goal.concise": "Concise",
+  "prompt.goal.precise": "Precise",
+  "prompt.goal.structure": "Structured",
+  "prompt.goal.strengthen": "Enforce",
+  "sw.permission.desc": "This build ships no permission / sandbox / approval patches. Use the native DSH settings instead (danger-full-access, approval policy).",
+  "sw.permission.hint": "Those patches rewrote host source fragments to strip sandbox confine(), the filesystem write fence checkedTarget(), the escalation ladder and the approval gate. Every effect is reachable through native DSH danger-full-access + approval policy: never, while host rewriting breaks on official updates, cannot be scoped per session, and has no lightweight rollback. Hence they are no longer provided.",
   "sw.context": "Context management",
   "sw.context.desc": "Turn off the repeat-call reminder and tool-result pruning. Off by default; tokens grow when on.",
   "sw.context.hint": "#18 repeat-tool reminder and #19 tool-result pruner. With them off the model no longer gets repeat-call reminders and long tool output is kept in full; the cost is steady token growth. Off by default.",
@@ -10406,7 +10450,7 @@ var LAYER_GROUP = {
   "0.2.0 \u517C\u5BB9": "dsh20"
 };
 var GROUP_ORDER = ["prompt", "code", "tools", "compat", "dsh20"];
-var PERMISSION_PATCH_IDS = []; // 权限补丁已移除：保留空数组以兼容面板渲染
+var PERMISSION_PATCH_IDS = [];
 var CONTEXT_PATCH_IDS = [18, 19];
 var PERMISSION_SET = new Set(PERMISSION_PATCH_IDS);
 var CONTEXT_SET = new Set(CONTEXT_PATCH_IDS);
@@ -15336,6 +15380,282 @@ function WelcomeNotice(props = {}) {
   return node;
 }
 
+// src/components/prompt-sidebar.js
+var SCOPES = ["global", "session", "one-shot"];
+var GOALS = ["concise", "precise", "structure", "strengthen"];
+function scopeOf(session, oneShot) {
+  if (oneShot) return "one-shot";
+  if (session) return "session";
+  return "global";
+}
+function PromptSidebar({ sessionId = "" } = {}) {
+  const t = useT();
+  const [ready, setReady] = useState(false);
+  const [busy, setBusy] = useState("");
+  const [notice, setNotice] = useState({ kind: "idle", text: "" });
+  const [globalText, setGlobalText] = useState("");
+  const [sessionText, setSessionText] = useState("");
+  const [oneShotText, setOneShotText] = useState("");
+  const [scope, setScope] = useState("global");
+  const [draft, setDraft] = useState("");
+  const [goal, setGoal] = useState("concise");
+  const [optimizedFrom, setOptimizedFrom] = useState("");
+  useEffect(() => {
+    let active = true;
+    setNotice({ kind: "idle", text: "" });
+    Promise.all([
+      apiJson("/dsh-purge/override").catch(() => null),
+      sessionId ? apiJson("/dsh-purge/inject-scope?sessionId=" + encodeURIComponent(sessionId)).catch(() => null) : Promise.resolve(null)
+    ]).then(
+      ([ov, sc]) => {
+        if (!active) return;
+        const g = ov && typeof ov.content === "string" ? ov.content : "";
+        setGlobalText(g);
+        const s = sc && typeof sc.session === "string" ? sc.session : "";
+        const o = sc && typeof sc.oneShot === "string" ? sc.oneShot : "";
+        setSessionText(s);
+        setOneShotText(o);
+        const first = scopeOf(s, o);
+        setScope(first);
+        setDraft(first === "global" ? g : first === "session" ? s : o);
+        setReady(true);
+      }
+    );
+    return () => {
+      active = false;
+    };
+  }, [sessionId]);
+  function switchScope(next) {
+    setScope(next);
+    setNotice({ kind: "idle", text: "" });
+    setOptimizedFrom("");
+    setDraft(next === "global" ? globalText : next === "session" ? sessionText : oneShotText);
+  }
+  async function save(content) {
+    setBusy("save");
+    setNotice({ kind: "idle", text: "" });
+    try {
+      if (scope === "global") {
+        const d = await apiJson("/dsh-purge/override", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ content })
+        });
+        if (d && d.ok === false) throw new Error(d.error || "save failed");
+        const next = typeof d?.content === "string" ? d.content : content;
+        setGlobalText(next);
+        setDraft(next);
+      } else {
+        if (!sessionId) throw new Error(t("prompt.noSession"));
+        const d = await apiJson("/dsh-purge/inject-scope", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ sessionId, scope, content })
+        });
+        if (d && d.ok === false) throw new Error(d.error || "save failed");
+        setSessionText(typeof d?.session === "string" ? d.session : "");
+        setOneShotText(typeof d?.oneShot === "string" ? d.oneShot : "");
+      }
+      setNotice({ kind: "ok", text: t("prompt.saved") });
+    } catch (e) {
+      setNotice({ kind: "error", text: String(e && e.message ? e.message : e) });
+    } finally {
+      setBusy("");
+    }
+  }
+  async function optimize() {
+    setBusy("optimize");
+    setNotice({ kind: "idle", text: "" });
+    const before = draft;
+    try {
+      const d = await apiJson("/dsh-purge/inject-optimize", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ content: draft, goal, sessionId })
+      });
+      if (!d || d.ok !== true) throw new Error(d && d.error || "optimize failed");
+      setDraft(d.content);
+      setOptimizedFrom(before);
+      setNotice({ kind: "ok", text: t("prompt.optimizedHint") });
+    } catch (e) {
+      setNotice({ kind: "error", text: String(e && e.message ? e.message : e) });
+    } finally {
+      setBusy("");
+    }
+  }
+  const disabled = !ready || !!busy;
+  const scopeHintKey = scope === "one-shot" ? "prompt.scope.oneShotHint" : `prompt.scope.${scope}Hint`;
+  const scopeHint = t(scopeHintKey);
+  return h(
+    "section",
+    { className: "dshpp-composer-settings" },
+    h("h3", null, t("prompt.title")),
+    h("p", { style: { opacity: 0.8, margin: "0 0 10px" } }, t("prompt.desc")),
+    // 作用域
+    h(
+      "div",
+      { className: "dshpp-setting-row", style: { gap: "6px", flexWrap: "wrap" } },
+      ...SCOPES.map(
+        (s) => h(
+          "button",
+          {
+            key: s,
+            type: "button",
+            disabled,
+            "aria-pressed": scope === s ? "true" : "false",
+            style: { fontWeight: scope === s ? 600 : 400, opacity: scope === s ? 1 : 0.6 },
+            onClick: () => switchScope(s)
+          },
+          t("prompt.scope." + s)
+        )
+      )
+    ),
+    h("p", { style: { opacity: 0.7, margin: "0 0 8px", fontSize: "0.9em" } }, scopeHint),
+    scope !== "global" && !sessionId ? h("p", { style: { color: "#c66", margin: "0 0 8px" } }, t("prompt.noSession")) : null,
+    // 正文
+    h("textarea", {
+      className: "dshpp-textarea",
+      rows: 12,
+      value: draft,
+      disabled,
+      placeholder: t("prompt.placeholder"),
+      onChange: (e) => setDraft(e.target.value)
+    }),
+    // 优化
+    h(
+      "div",
+      { className: "dshpp-setting-row", style: { gap: "6px", flexWrap: "wrap", marginTop: "8px" } },
+      h("select", {
+        value: goal,
+        disabled,
+        onChange: (e) => setGoal(e.target.value),
+        style: { flex: "0 0 auto" }
+      }, ...GOALS.map((g) => h("option", { key: g, value: g }, t("prompt.goal." + g)))),
+      h(
+        "button",
+        { type: "button", disabled, onClick: optimize },
+        busy === "optimize" ? t("prompt.optimizing") : t("prompt.optimize")
+      ),
+      h(
+        "button",
+        { type: "button", disabled, onClick: () => save(draft) },
+        busy === "save" ? t("prompt.saving") : t("prompt.save")
+      ),
+      optimizedFrom ? h(
+        "button",
+        {
+          type: "button",
+          disabled,
+          onClick: () => {
+            setDraft(optimizedFrom);
+            setOptimizedFrom("");
+            setNotice({ kind: "idle", text: "" });
+          }
+        },
+        t("prompt.revertOptimize")
+      ) : null
+    ),
+    // 清空该作用域
+    scope !== "global" ? h(
+      "div",
+      { style: { marginTop: "6px" } },
+      h(
+        "button",
+        {
+          type: "button",
+          disabled: disabled || !sessionId,
+          onClick: () => save("")
+        },
+        t("prompt.clearScope")
+      )
+    ) : null,
+    notice.text ? noticeNode(notice) : null
+  );
+}
+
+// src/components/prompt-dock.js
+function PromptDockButton() {
+  const [open, setOpen] = useState(false);
+  const [sessionId, setSessionId] = useState("");
+  const boxRef = useRef(null);
+  const resolve = useCallback(() => {
+    try {
+      return currentSessionId(hostSessions()) || "";
+    } catch {
+      return "";
+    }
+  }, []);
+  useEffect(() => {
+    if (open) setSessionId(resolve());
+  }, [open, resolve]);
+  useEffect(() => {
+    if (!open) return void 0;
+    const onDown = (event) => {
+      const el = boxRef.current;
+      if (el && event.target instanceof Node && !el.contains(event.target)) setOpen(false);
+    };
+    const onKey = (event) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDown);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDown);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+  return h(
+    "div",
+    { ref: boxRef, style: { position: "relative", display: "inline-flex" } },
+    h(
+      "button",
+      {
+        type: "button",
+        title: "Prompt",
+        "aria-expanded": open ? "true" : "false",
+        onClick: () => setOpen((v) => !v),
+        style: {
+          fontWeight: open ? 600 : 400,
+          opacity: open ? 1 : 0.75
+        }
+      },
+      "P"
+    ),
+    open ? h(
+      "div",
+      {
+        role: "dialog",
+        "aria-label": "Prompt",
+        style: {
+          position: "absolute",
+          bottom: "34px",
+          right: 0,
+          zIndex: 60,
+          width: "min(580px, 92vw)",
+          maxHeight: "72vh",
+          overflowY: "auto",
+          background: "var(--dsh-color-bg-elevated, #181818)",
+          color: "inherit",
+          border: "1px solid var(--dsh-color-border, #3a3a3a)",
+          borderRadius: "10px",
+          padding: "12px",
+          boxShadow: "0 12px 34px rgba(0,0,0,0.28)"
+        }
+      },
+      h(
+        "div",
+        { style: { display: "flex", justifyContent: "flex-end" } },
+        h(
+          "button",
+          { type: "button", "aria-label": "Close", onClick: () => setOpen(false) },
+          "\xD7"
+        )
+      ),
+      h(PromptSidebar, { sessionId })
+    ) : null
+  );
+}
+
 // src/state/redteam-mode.js
 function isRedteamPresetId(value) {
   const text = String(value || "").trim();
@@ -15809,6 +16129,19 @@ function apply(ctx) {
         order: 60
       },
       PanelOverlays
+    )
+  );
+  ctx.slots.inject(
+    "conversation.input.right",
+    () => ctx.slots.register(
+      {
+        name: "conversation.input.right",
+        id: "dsh-purge-prompt",
+        order: 60,
+        label: "Prompt",
+        inject: () => ({ t })
+      },
+      PromptDockButton
     )
   );
   ctx.slots.inject(
